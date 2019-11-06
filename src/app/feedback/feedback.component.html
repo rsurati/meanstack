@@ -1,0 +1,62 @@
+<br><br>
+<main>
+    <div style="text-align:center">
+        <h1>Contact Us</h1>
+    </div>
+    <form method="POST">
+        <div class="container" style="margin-top: 50px;">
+            <div class="form-group">
+                <label for="fname">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Email" onkeyup="keyup()">
+                <label for="email" id="error_email" style="color: red; display: block;"></label>
+            </div>
+            <div class="form-group">
+                <select class="custom-select">
+                    <option selected="">Select Country</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="num">Contact </label>
+                <input type="number" class="form-control" id="num" placeholder="Enter Contact Number" onkeyup="keyup()">
+                <label for="num" id="error_num" style="color: red; display: block;"></label>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Input addons</label>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">+</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                               <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sub">Subject</label>
+                <input type="text" class="form-control" id="sub" placeholder="Subject">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleTextarea">Message</label>
+                <textarea class="form-control" id="msg" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</main>
+
+<!-- Main Content Ends -->
+

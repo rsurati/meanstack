@@ -1,0 +1,52 @@
+<br>
+<main>
+
+    <div style="text-align: center;">
+        <h2>Upload Wallpaper</h2>
+</div>
+    <form [formGroup]="fileForm" >
+       <div class="container" style="margin-top: 50px;">
+           <fieldset>
+               <div class="form-group">
+                   <label for="email">Email address</label>
+                   <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Enter Name" formControlName="imageuploadedby">
+                   <label for="email" id="error_email" style="color: red; display: block;"></label>
+               </div>
+               <div class="form-group">
+                <label for="email">Name Of Image</label>
+                <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Enter Name" formControlName="imagename">
+                <label for="email" id="error_email" style="color: red; display: block;"></label>
+            </div>
+
+            <div class="form-group">
+                    <label for="category">Category</label>
+
+                <select class="form-control" id="category" name="category">
+                 <option value="" disabled selected type="hidden" id="category" required>Category</option>
+                     <option value="nature">Nature</option>
+                 <option value="art">Art</option>
+                 <option value="animation">Animation</option>
+                  <option value="Other">Other</option>
+                      
+               </select>
+                </div>
+           
+
+               <div class="form-group">
+                   <label for="myfile">Upload File</label>
+                   <input type="file" class="form-control" id="profile" placeholder="Upload File" formControlName="imageurl" name="imageurl" >
+               </div>
+
+            
+              
+
+  
+
+               <button type="submit" class="btn btn-primary" (click)='upload(fileForm)'>Upload File</button>
+           </fieldset>
+       </div>
+   </form>  
+   <br><br><br><br>
+</main>
+<!-- Main Content Ends -->
+

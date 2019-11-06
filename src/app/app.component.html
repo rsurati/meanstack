@@ -1,0 +1,199 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: 2E3E4E" *ngIf="isLogged">
+    <a class="navbar-brand" href="mainpage">InfinityWallpapers<small>.com</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="mainpage">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus">About</a>
+        </li>
+      </ul>
+      <li class="nav-item">
+        <a class="nav-link" href="uploadnew">Upload Image</a>
+      </li>
+     
+  
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" id="search" placeholder="Search">
+        <button type="button" class="btn btn-success">Search</button>
+      </form>
+  
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <!-- <label for="fname" id="fname" style="color: white;">Ramya</label> -->
+      <a class="navbar-brand" href="userhome">ramya</a>
+      </div>
+    
+  </nav>
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background-color: 2E3E4E" *ngIf="!isLogged">
+  <a class="navbar-brand" href="mainpage">InfinityWallpapers<small>.com</small></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="mainpage">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="category">Categories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus">About</a>
+      </li>
+    </ul>
+    <li class="nav-item">
+      <a class="nav-link" href="uploadnew">Upload Image</a>
+    </li>
+   
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" id="search" placeholder="Search">
+      <button type="button" class="btn btn-success">Search</button>
+    </form>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+    <input type="submit" class="btn btn-success" [routerLink]="['./loginnew']" name="login" value="Login" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+   
+<!--     
+      <input type="submit" class="btn btn-success" [routerLink]="['./signin']" name="signin" value="Sign In" />
+      &nbsp;&nbsp;&nbsp;&nbsp; -->
+      
+      <input type="submit" class="btn btn-success" [routerLink]="['./register']" name="signin" value="Sign Up" formaction="registration.html"/>
+    
+  </div>
+  
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!-- <div class="column col-lg-4 col-md-6 col-sm-12 mt-3 ima data-aos="fade-up" data-aos-delay="300">
+<img src="../assets/../assets/images/blog_1.jpg"> 
+<img src="../assets/../assets/images/img_1.jpg">
+<img src="../assets/../assets/images/img_10.jpg">
+<img src="../assets/../assets/images/img_2.jpg">
+<img src="../assets/../assets/images/blog_1.jpg"> 
+<img src="../assets/../assets/images/img_3.jpg">
+<img src="../assets/../assets/images/img_4.jpg">
+<img src="../assets/../assets/images/img_5.jpg"> 
+<img src="../assets/../assets/images/img_6.jpg">  -->
+<!-- 
+</div>
+
+<div class="container-fluid photos" style="background-color:#000000">
+    <div class="row align-items-stretch">
+  
+<div class="column col-lg-4 col-md-6 col-sm-12 mt-3 ima" data-aos="fade-up" data-aos-delay="200" >
+  <img src="../assets/../assets/images/avengers-age-of-ultron.jpg">
+  <img src="../assets/../assets/images/dark-desktop.jpg" />
+  <img src="../assets/../assets/images/Avengers.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War_Deluxe_OST.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War1.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-600x600.jpg">
+  <img src="../assets/../assets/images/dslr.jpg">
+  <img src="../assets/../assets/images/wallpaper.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-720x720.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-894x894.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-956x956.jpg">
+  <img src="../assets/../assets/images/Avengers-Infinity-War-OST.jpg">
+</div>
+<div class="column col-lg-4 col-md-6 col-sm-12 mt-3"  data-aos="fade-up" data-aos-delay="300">
+  <img src="../assets/../assets/images/Avengers_Infinity_War_Deluxe_OST.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-720x720.jpg">
+  <img src="../assets/../assets/images/Avengers-Infinity-War-OST.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War1.jpg">
+  <img src="../assets/../assets/images/dark-desktop.jpg" />
+  <img src="../assets/../assets/images/avengers-age-of-ultron.jpg">
+  <img src="../assets/../assets/images/dslr.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-956x956.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-894x894.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-600x600.jpg">
+  <img src="../assets/../assets/images/Avengers.jpg">
+  <img src="../assets/../assets/images/wallpaper.jpg">
+  <img src="../assets/../assets/images/dark-desktop.jpg" />
+</div>
+<div class="column col-lg-4 col-md-6 col-sm-12 mt-3"  data-aos="fade-up" data-aos-delay="400">
+  <img src="../assets/../assets/images/avengers-age-of-ultron.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-600x600.jpg">
+  <img src="../assets/../assets/images/Avengers.jpg">
+  <img src="../assets/../assets/images/Avengers-assemblejpg.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-894x894.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War1.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-720x720.jpg">
+  <img src="../assets/../assets/images/wallpaper3.jpg" />
+  <img src="../assets/../assets/images/AWP.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War_Deluxe_OST.jpg">
+  <img src="../assets/../assets/images/Avengers_Infinity_War.jpg">
+  <img src="../assets/../assets/images/Avengers-Endgame-956x956.jpg">
+</div>
+</div>
+</div>
+
+
+
+
+
+  
+
+<br><br> -->
+<footer class="page-footer font-small special-color-dark pt-4">
+  <!-- Footer Elements -->
+
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="http://www.linkedin.com" class="fa fa-linkedin"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="http://www.github.com" class="fa fa-github"></a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    &copy; 2019 Copyright :
+    <a href="#">InfinityWallpapers.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

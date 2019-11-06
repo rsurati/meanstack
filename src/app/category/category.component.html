@@ -1,0 +1,42 @@
+<br><br>
+
+<div style="text-align: center;">
+    <h2>Categories</h2>
+</div>
+
+<main style="text-align: center;">
+    <div class="container">
+    <form (submit)="getImageByCategory($event)">
+    <div class="form-group">
+        <!-- <div class="w-50"> -->
+            <label for="department">Category</label>
+            <select class="form-control" id="category" name="category">
+            <option value="" disabled selected type="hidden" id="category"  required>Category</option>
+            <option value="nature">Nature</option>
+                <option value="animation">Animation</option>
+                <option value="art">Art</option>                       
+            </select>
+        <!-- </div> -->
+
+        <button type="submit" class="btn btn-primary">Get Images</button>
+
+        <div class="main-container">
+            <div  *ngFor="let u of imagesofcategory">
+                    <div class="row">
+                    <div class="column col-lg-4 col-md-6 col-sm-12 mt-3 ima">
+                            <a href="#" class="lsb-preview" data-lsb-group="gallery1" >
+                                <img src="{{u.imageurl}}"class="img-fluid"  />
+                                <p>{{u.imagename}}</p>
+                            </a>
+                            
+                    </div>
+                    </div>
+            
+            
+            </div>
+        </div>
+
+    </div>
+    </form>
+</div>
+</main>

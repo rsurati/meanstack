@@ -1,0 +1,73 @@
+
+<br><br>
+
+<div style="text-align: center;">
+    <h1>Sign Up </h1>
+</div>
+
+<!-- Main Content -->
+
+
+<!-- Main Content -->
+<main>
+    <!-- <div class="w-50"> -->
+     <form id="formData" [formGroup]="myform"> 
+        <div class="container" style="margin-top: 50px;">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" formControlName='fname' name="fname" aria-describedby="emailHelp" placeholder="Enter Name" >
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-group" id="emailCheck">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" id="email" formControlName='email'name="email" aria-describedby="emailHelp" placeholder="Enter Email" onkeyup="keyup()" >
+                <label for="email" id="error_email" style="color: red; display: block;"></label>
+        </div>
+
+            <div class="form-group" id="pwdcheck1">
+                <label for="pwd1">Password</label>
+                <input type="password" class="form-control" id="pwd1" formControlName='pwd1' name="pwd1" placeholder="Create Password">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="toggle_pass()">
+                    <label class="custom-control-label" for="customSwitch1">Show Password</label>
+                </div>
+            </div>
+
+            <div class="form-group" id="pwdcheck2">
+                <label for="pwd2">Confirm Password</label>
+                <input type="password" class="form-control" id="pwd2" placeholder="Confirm Password" onkeyup="checkPasswordMatch()">
+
+                <div class="valid-feedback">Passwords Match</div>
+                <div class="invalid-feedback">Passwords Do Not Match</div>
+
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch2" onclick="toggle_confirm()">
+                    <label class="custom-control-label" for="customSwitch2">Show Password</label>
+                </div>
+
+             </div>
+
+            <div class="form-group">
+                <!-- <br> -->
+                <!-- <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                    <label class="custom-control-label" for="customSwitch3">By Joining, you agree to the <a href="privacypolicy">Terms and Privacy Policy.
+                    </a>
+                       
+                    </label>
+                </div> -->
+                <button type="submit" class="btn btn-primary" id="join" value="register" (click)="register()">Join Now</button>
+                <small id="tandc" class="form-text text-muted">By Joining, You agree to the <a href="privacy-policy.html">Terms and Privacy Policy.</a></small>
+            </div>
+
+        
+     
+        </div>
+    </form>
+</main>
+
+
+<router-outlet></router-outlet>
+
